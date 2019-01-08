@@ -12,10 +12,10 @@ from model import copy_weights, edsr, wdsr, srgan
 from optimizer import weightnorm as wn
 from util import init_session
 
-from keras import backend as K
-from keras.losses import mean_absolute_error, mean_squared_error
-from keras.models import load_model
-from keras.optimizers import Adam
+from tensorflow.python.keras import backend as K
+from tensorflow.python.keras.losses import mean_absolute_error, mean_squared_error
+from tensorflow.python.keras.models import load_model
+from tensorflow.python.keras.optimizers import Adam
 
 logger = logging.getLogger(__name__)
 

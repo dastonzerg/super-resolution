@@ -1,8 +1,8 @@
 import tensorflow as tf
 
-from keras import backend as K
-from keras.layers import Add, Conv2D, Input, Lambda, Activation
-from keras.models import Model
+from tensorflow.python.keras import backend as K
+from tensorflow.python.keras.layers import Add, Conv2D, Input, Lambda, Activation
+from tensorflow.python.keras.models import Model
 
 from .common import SubpixelConv2D, Normalization, Denormalization
 

@@ -9,9 +9,9 @@ from model import srgan, edsr
 from train import create_train_workspace, write_args
 from util import concurrent_generator, init_session
 
-from keras.losses import mean_squared_error
-from keras.optimizers import Adam
-from keras.applications.vgg19 import preprocess_input
+from tensorflow.python.keras.losses import mean_squared_error
+from tensorflow.python.keras.optimizers import Adam
+from tensorflow.python.keras.applications.vgg19 import preprocess_input
 
 logger = logging.getLogger(__name__)
 

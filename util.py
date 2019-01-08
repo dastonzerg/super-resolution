@@ -3,8 +3,8 @@ import tensorflow as tf
 from contextlib import contextmanager
 from PIL import Image
 
-from keras import backend as K
-from keras.utils.data_utils import OrderedEnqueuer
+from tensorflow.python.keras import backend as K
+from tensorflow.python.keras.utils.data_utils import OrderedEnqueuer
 
 
 @contextmanager
@@ -18,7 +18,7 @@ def concurrent_generator(sequence, num_workers=8, max_queue_size=32, use_multipr
 
 
 def init_session(gpu_memory_fraction):
-    K.tensorflow_backend.set_session(tensorflow_session(gpu_memory_fraction=gpu_memory_fraction))
+    K.set_session(tensorflow_session(gpu_memory_fraction=gpu_memory_fraction))
 
 
 def reset_session(gpu_memory_fraction):
